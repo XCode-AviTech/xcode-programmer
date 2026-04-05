@@ -1,0 +1,222 @@
+/* ===== Responsive CSS ===== */
+
+/* Extra small devices (phones, < 576px) */
+@media screen and (min-width: 274px) and (max-width: 575px) {
+  .navbar .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar{
+    padding: 10px;
+    width: 100vw;
+  }
+
+  .navbar .logo .info{
+
+    a{
+      font-size: 1.6rem;
+    }
+
+    .social a{
+      font-size: 1rem;
+    }
+  }
+
+  .navbar .toggle{
+    display: block;
+    right: 8px;
+  }
+
+  .navbar #close-btn{
+    display: none;
+  }
+
+  #navbarNav {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 0px;
+
+    .hero-content{
+      width: 100%;
+      padding: 20px 10px;
+    }
+
+    .hero-content:hover{
+      box-shadow: none;
+    }
+
+    .pic-glow{
+      width: 120px;
+      height: 120px;
+    }
+
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .tagline {
+      font-size: 1rem;
+      max-width: 300px;
+    }
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .skill .cards {
+    justify-content: center;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-icons a {
+    width: 50px;
+    height: 50px;
+    font-size: 1.8rem;
+  }
+}
+
+/* Small devices (phones, 576px - 767px) */
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    max-width: 380px;
+  }
+
+  .pic-wrap {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ring {
+    width: 170px;
+    height: 170px;
+    top: -10px;
+    left: -10px;
+  }
+
+  .skills-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Medium devices (tablets, 768px - 991px) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.45rem;
+  }
+
+  .tagline {
+    max-width: 450px;
+  }
+
+  .pic-wrap {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ring {
+    width: 180px;
+    height: 180px;
+    top: -10px;
+    left: -10px;
+  }
+
+  .skills-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .hero .buttons {
+    gap: 20px;
+  }
+}
+
+/* Large devices (desktops, 992px - 1199px) */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .hero h1 {
+    font-size: 2.75rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .tagline {
+    max-width: 500px;
+  }
+
+  .skills-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Extra large devices (desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 1.6rem;
+  }
+
+  .tagline {
+    max-width: 520px;
+  }
+
+  .skills-grid {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  .project-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
